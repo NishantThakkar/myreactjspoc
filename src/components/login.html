@@ -1,0 +1,36 @@
+<form>
+    <h3>Sign In</h3>
+    <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" class="form-control" placeholder="Email address" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" />
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="rememberMe"/>
+            <label for="rememberMe" class="custom-control-label">Remember Me</label>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-block" type="submit">Login</button>
+    <p class="forgot-password text-right">
+        Forgot <a href="#">password?</a>
+    </p>
+</form>
+<nav class="navbar navbar-expanded-lg navbar-right fixed-top">
+    <div class="container">
+        <Link class="navbar-brand" to={"/sign-in"}>My Home</Link>
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <Link class="nav-link" to={"/sign-in"}>Login</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link" to={"/sign-up"}>Sign up</Link>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
